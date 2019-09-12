@@ -43,6 +43,7 @@ let config = {
     "data_dir": "./blockData/data"
 }
 
+//加载 fibos-alive 模块
 require('../lib')({
     backup_url: 'http://ghost.bp.fo'
 });
