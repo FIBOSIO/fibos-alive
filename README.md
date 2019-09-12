@@ -4,7 +4,7 @@
 
 ```js
 // 在节点启动文件中
-require("fibos-nodesuite")({
+require("fibos-alive")({
     backup_url:'http://ghost.bp.fo'
 })
 ```
