@@ -1,24 +1,40 @@
 # FIBOS 节点保活模块
 
-## 使用说明
+## 快速开始
+
+1.1 安装 fibos-alive 模块
+
+```
+fibos --install fibos-alive
+```
+
+1.2 添加 fibos-alive 模块
 
 ```js
-// 在节点启动文件中
+let fibos = require('fibos');
+...
+//添加节点保活模块
 require("fibos-alive")({
     backup_url:'http://ghost.bp.fo'
 })
+...
+fibos.start();
 ```
 
-缺省参数:
+[实例代码](./example/seed.js);
+
+1.3 节点启动
+
+在你的启动命令中增加 `--keepalive` ,例如：`fibos seed.js --keepalive`
+
+
+## 参数说明
+
+2.1 启动参数
 
 | 参数 | 默认值 | 含义 |
 | --- | --- | --- |
-| backup_url | backup_url: http://ghost.bp.fo | 文件获取地址 |
-
-节点启动:
-
-执行命令中带 `--keepalive` 实例: `fibos seed.js --keepalive`
-
+| backup_url | http://ghost.bp.fo | 备份文件获取地址 |
 
 ## 实现原理
 
