@@ -15,17 +15,16 @@ fibos --install fibos-alive
 1.2 添加 fibos-alive 模块
 
 ```js
-let fibos = require('fibos');
-...
 //添加节点保活模块
 require("fibos-alive")({
     backup_url:'http://ghost.bp.fo'
 })
+let fibos = require('fibos');
 ...
 fibos.start();
 ```
 
-[实例代码](./example/seed.js);
+[实例代码](./example/seed.js)
 
 1.3 节点启动
 
