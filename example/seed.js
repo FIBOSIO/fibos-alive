@@ -1,3 +1,7 @@
+//加载 fibos-alive 模块
+require('../lib')({
+    backup_url: 'http://ghost.bp.fo'
+});
 const fs = require("fs");
 const fibos = require('fibos');
 
@@ -42,11 +46,6 @@ let config = {
     "config_dir": "./blockData/data",
     "data_dir": "./blockData/data"
 }
-
-//加载 fibos-alive 模块
-require('../lib')({
-    backup_url: 'http://ghost.bp.fo'
-});
 
 fibos.config_dir = config.config_dir;
 fibos.data_dir = config.data_dir;
