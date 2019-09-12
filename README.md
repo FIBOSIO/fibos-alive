@@ -27,14 +27,19 @@ fibos.start();
 
 在你的启动命令中增加 `--keepalive` ,例如：`fibos seed.js --keepalive`
 
-
 ## 参数说明
 
-2.1 启动参数
+2.1 配置参数
 
 | 参数 | 默认值 | 含义 |
 | --- | --- | --- |
 | backup_url | http://ghost.bp.fo | 备份文件获取地址 |
+
+2.2 启动参数
+
+| 参数 |含义 |
+| --- | --- |
+| --keepalive | 以保护模式启动节点 |
 
 ## 实现原理
 
